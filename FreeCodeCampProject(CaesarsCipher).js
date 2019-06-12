@@ -4,10 +4,11 @@ function rot13(str) { // LBH QVQ VG!
   str = str.split("");
 
   for(var i = 0; i <str.length; i++){
-    for(var j = 0; j < 25; j++) {
+    for(var j = 0; j < alphabet.length; j++) {
       if(str[i] == alphabet[j]) {
         str[i] = alphabet[j+13];
         console.log(str)
+        j = alphabet.length+1;
       }
 
     }
